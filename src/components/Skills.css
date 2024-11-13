@@ -1,0 +1,420 @@
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes tailwind {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes reactjs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes framer-motionjs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes illustirator {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes arabic {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes english {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes chinese {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes glow {
+  0% {
+    background-color: var(--bg-color);
+    box-shadow: none;
+  }
+  100% {
+    background-color: var(--hover-color);
+    box-shadow: var(--sneon-box-shadow);
+  }
+}
+
+.main-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--hover-color);
+}
+
+.main-text h2 {
+  font-weight: 700;
+  font-size: var(--normal-font);
+}
+
+.main-text span {
+  color: #fdfdfd;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.skills {
+  background-color: var(--secon-bg-color);
+}
+
+.skill-main {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-rows: minmax(200px, auto);
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+  grid-template-areas:
+    "skill-left skill-right"
+    "skill-bottom skill-bottom";
+}
+@media (max-width: 768px) {
+  .skill-main {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: minmax(200px, auto);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    grid-template-areas:
+      "skill-left"
+      "skill-right"
+      "skill-bottom";
+  }
+}
+.skill-bar {
+  margin-bottom: 2.4rem;
+}
+
+.skill-main h3 {
+  margin-bottom: 2rem;
+  font-size: var(--normal-font);
+  text-align: center;
+}
+.skill-left {
+  grid-area: skill-left;
+}
+.skill-right {
+  grid-area: skill-right;
+}
+.skill-bottom {
+  grid-area: skill-bottom;
+}
+.skill-left .skill-bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.skill-left .skill-bar .info p.html:before {
+  content: "\e940";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.css:before {
+  content: "\e91e";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.javascript:before {
+  content: "\e946";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.reactjs:before {
+  content: "\e968";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.sass:before {
+  content: "\e96c";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.tailwind:before {
+  content: "\e97a";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.photoshop:before {
+  content: "\ebb7";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.skill-left .skill-bar .info p.figma:before {
+  content: "\ebb7";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .info p.illustirator:before {
+  content: "\ee64";
+  font-family: "Boxicons";
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill-left .skill-bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.skill-bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--hover-color);
+  border-radius: 25px;
+  box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html {
+  width: 97%;
+  animation: html 2s;
+}
+.skill-bar .bar .css {
+  width: 90%;
+  animation: css 3s;
+}
+.skill-bar .bar .sass {
+  width: 85%;
+  animation: sass 3s;
+}
+.skill-bar .bar .tailwind {
+  width: 80%;
+  animation: tailwind 3s;
+}
+.skill-bar .bar .javascript {
+  width: 90%;
+  animation: javascript 4s;
+}
+.skill-bar .bar .reactjs {
+  width: 85%;
+  animation: reactjs 4s;
+}
+.skill-bar .bar .framer-motionjs {
+  width: 60%;
+  animation: framer-motionjs 4s;
+}
+.skill-bar .bar .photoshop {
+  width: 90%;
+  animation: photoshop 5s;
+}
+.skill-bar .bar .illustirator {
+  width: 65%;
+  animation: illustirator 6s;
+}
+.skill-bar .bar .figma {
+  width: 75%;
+  animation: figma 6s;
+}
+
+/* //skill right  */
+
+.professional {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  margin-top: 50px;
+}
+
+.box {
+  position: relative;
+  margin: 5px;
+  flex: 1 1 15rem;
+}
+
+.box .text {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.box .text big {
+  font: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box .text small {
+  display: block;
+  font-weight: 600;
+}
+.circle {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid #fff; */
+}
+
+.circle .points {
+  width: 2px;
+  height: 10px;
+  background-color: var(--bg-color);
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.marked {
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+/* ---------skill bottom----------------------skill bottom------------------- */
+.skill-bottom .skill-bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.skill-bottom .skill-bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.skill-bottom.skill-bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--hover-color);
+  border-radius: 25px;
+  box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bottom .skill-bar .bar .arabic {
+  width: 100%;
+  animation: arabic 2s;
+}
+
+.skill-bar .bar .english {
+  width: 75%;
+  animation: english 3s;
+}
+
+.skill-bar .bar .chinese {
+  width: 25%;
+  animation: chinese 4s;
+}
+
+/* end skills section  */

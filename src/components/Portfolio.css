@@ -1,0 +1,138 @@
+.portfolio-gallery {
+  transition: 0.1s;
+}
+.fillter-buttons {
+  margin: 2rem;
+  text-align: center;
+}
+.mixitup-control-active {
+  color: var(--hover-color) !important;
+}
+.fillter-buttons .button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-left: 1.3rem;
+  color: var(--text-color);
+}
+
+.fillter-buttons .button:hover {
+  color: var(--hover-color);
+}
+@media (max-width: 768px) {
+  .fillter-buttons {
+    margin: 0 0 20px 0;
+  }
+}
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.port-box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #292e33;
+  display: flex;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  border: 2px solid var(--hover-color);
+  box-shadow: var(--neon-box-shadow);
+}
+
+.port-box:hover .port-content {
+  opacity: 1;
+}
+
+.port-box:hover .port-image img {
+  /* transform: scale(1.1) rotate(20deg); */
+  transform: scale(1.2) rotate(5deg);
+}
+.port-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.port-image img {
+  width: 100%;
+  opacity: 0.5s;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.port-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), #12f7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 2rem;
+}
+
+.port-content h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.port-content p {
+  font-size: 0.8rem;
+  margin: 5px 0 15px 0;
+}
+
+.port-content a {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--hover-color);
+  outline: 2px solid #fff;
+  transition: 0.3s;
+}
+.a-grope {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+.port-content a i {
+  font-size: 1.3rem;
+  color: var(--hover-color);
+}
+
+.port-content a:hover {
+  .port-content a {
+    background: var(--secon-bg-color);
+  }
+  .port-content i {
+    color: var(--hover-color);
+  }
+}

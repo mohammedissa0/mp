@@ -1,0 +1,11 @@
+.typingText {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .typingText {
+    font-size: 20px;
+  }
+}
