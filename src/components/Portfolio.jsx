@@ -41,7 +41,7 @@ function Porject({ kind, img, name, link, github }) {
 }
 function Portfolio(props, ref) {
   useEffect(() => {
-    var mixer = mixitup(".portfolio-gallery");
+    var mixer = window.mixitup(".portfolio-gallery");
   }, []);
 
   const allRef = useRef(null);
