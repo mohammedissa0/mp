@@ -54,7 +54,7 @@ body {
   color: var(--text-color);
 }
 .flyBtn {
-  display: hidden;
+  display: none;
   position: fixed;
   z-index: 1000;
   bottom: 30px;
