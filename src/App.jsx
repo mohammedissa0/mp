@@ -16,16 +16,15 @@ function App() {
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
 
-  let flyBtn = document.querySelector(".flyBtn");
-  window.addEventListener("scroll", function () {
-    if (window.scrollY >= 600) {
-      flyBtn.style.display = "block";
-    } else {
-      flyBtn.style.display = "none";
-    }
-  });
-
   useEffect(() => {
+    let flyBtn = document.querySelector(".flyBtn");
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= 600) {
+        flyBtn.style.display = "block";
+      } else {
+        flyBtn.style.display = "none";
+      }
+    });
     const options = {
       root: null,
       rootMargin: "0px",
