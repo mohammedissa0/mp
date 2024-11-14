@@ -53,3 +53,22 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+.flyBtn {
+  display: hidden;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  right: 35px;
+}
+.flyBtn a {
+  display: inline-flex;
+  justify-content: center;
+  color: var(--text-color);
+  background: var(--hover-color);
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+.flyBtn a i {
+  font-size: 1rem;
+  color: var(--secon-bg-color);
+}

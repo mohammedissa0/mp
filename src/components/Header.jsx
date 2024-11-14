@@ -10,6 +10,12 @@ function Header(props) {
     setActive((prev) => !prev);
   }
 
+  window.onscroll = () => {
+    setActive((prev) => {
+      prev = false;
+    });
+  };
+
   const listAnimation = {
     hidden: { opacity: 0, y: 80 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },

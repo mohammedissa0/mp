@@ -16,6 +16,15 @@ function App() {
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
 
+  let flyBtn = document.querySelector(".flyBtn");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 600) {
+      flyBtn.style.display = "block";
+    } else {
+      flyBtn.style.display = "none";
+    }
+  });
+
   useEffect(() => {
     const options = {
       root: null,
@@ -50,6 +59,11 @@ function App() {
     <>
       <Header activeSection={activeSection} />
       <Home ref={homeRef} />
+      <div className="flyBtn">
+        <a href={(window.location.href = "#home")}>
+          <i className="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
       <Portfolio ref={portfolioRef} />
