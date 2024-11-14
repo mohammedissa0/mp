@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./Portfolio.css";
-import "../mixitup.min.js";
+
 import mixitup from "mixitup";
 function I({ name }) {
   return (
