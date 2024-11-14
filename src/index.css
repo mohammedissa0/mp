@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url("./assets/stars1.webp");
+  background-image: url("../public/assets/stars1.webp");
   background-repeat: repeat;
   object-fit: cover;
   overflow-x: hidden;
