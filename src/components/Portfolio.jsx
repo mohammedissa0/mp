@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./Portfolio.css";
 import "../mixitup.min.js";
-
+import mixitup from "mixitup";
 function I({ name }) {
   return (
     <motion.i
@@ -41,7 +41,7 @@ function Porject({ kind, img, name, link, github }) {
 }
 function Portfolio(props, ref) {
   useEffect(() => {
-    var mixer = window.mixitup(".portfolio-gallery");
+    var mixer = mixitup(".portfolio-gallery");
   }, []);
 
   const allRef = useRef(null);
