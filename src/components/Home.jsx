@@ -73,7 +73,7 @@ function Home(props, ref) {
         </motion.div>
 
         <motion.div variants={listAnimation} className="btn-box">
-          <a download href="/images/Mohammed-issa0.pdf" className="btn">
+          <a download href="./assets/Mohammed-issa0.pdf" className="btn">
             Donwload CV
           </a>
           <a href="#" className="btn">
