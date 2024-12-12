@@ -126,6 +126,46 @@ function Portfolio(props, ref) {
           className="portfolio-gallery scroll-scale"
         >
           <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/watch.png"
+            name="LuxuryWatch"
+            link="https://roaring-fox-1c29d8.netlify.app/"
+            github="https://roaring-fox-1c29d8.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects"
+            img="./assets/appointment.png"
+            name="appointment"
+            link="https://appointment-taskelkook.netlify.app/"
+            github="https://appointment-taskelkook.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/urinexa.png"
+            name="Urinexa"
+            link="https://urinexa.netlify.app/"
+            github="https://urinexa.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/sportflex.png"
+            name="SportFlex"
+            link="https://sportflex.netlify.app/"
+            github="https://sportflex.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/blue.png"
+            name="BlueBits"
+            link="https://bluebits0.netlify.app/"
+            github="https://bluebits0.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
             kind="ReactProjects"
             img="./assets/gymWorkout.jpg"
             name="Gym Workout"
