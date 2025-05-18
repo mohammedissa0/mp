@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-
+import { lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+const About = lazy(() => import("./components/About"));
+const Skills = lazy(() => import("./components/Skills"));
+const Portfolio = lazy(() => import("./components/Portfolio"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
@@ -54,6 +54,7 @@ function App() {
       });
     };
   }, []);
+
   return (
     <>
       <Header activeSection={activeSection} />
@@ -63,11 +64,25 @@ function App() {
           <i className="bx bx-up-arrow-alt"></i>
         </a>
       </div>
-      <About ref={aboutRef} />
-      <Skills ref={skillsRef} />
-      <Portfolio ref={portfolioRef} />
-      <Contact ref={contactRef} />
-      <Footer />
+       <Suspense fallback={<div>Loading About...</div>}>
+        <About ref={aboutRef} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Skills...</div>}>
+        <Skills ref={skillsRef} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Portfolio...</div>}>
+        <Portfolio ref={portfolioRef} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Contact...</div>}>
+        <Contact ref={contactRef} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Footer...</div>}>
+        <Footer />
+      </Suspense>
     </>
   );
 }

@@ -3,7 +3,7 @@ import "./About.css";
 import { motion } from "framer-motion";
 function About(props, ref) {
   const aboutPhotoAnimation = {
-    hidden: { opacity: 0, x: -200 },
+    hidden: { opacity: 0, x: -25 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
   };
   return (
@@ -14,13 +14,13 @@ function About(props, ref) {
         whileInView="visible"
         variants={{
           visible: {
-            transition: { staggerChildren: 0.3, delayChildren: 0.5 },
+            transition: { staggerChildren: 0.3, delayChildren: 0.2 },
           },
         }}
         className="img-about scroll-scale"
       >
         <motion.div variants={aboutPhotoAnimation}>
-          <img src="./assets/5.png" alt="" width="450px" height="450px" />
+          <img src="./assets/5.png" alt="" width="450px" height="450px" loading="lazy"/>
         </motion.div>
         <motion.div variants={aboutPhotoAnimation} className="info-about1 te">
           <span>10+</span>

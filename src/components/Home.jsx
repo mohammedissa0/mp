@@ -106,7 +106,7 @@ function Home(props, ref) {
       >
         {/* <!-- <div className="chat"></div> --> */}
         <div className="img-box">
-          <img src="./assets/2.png" alt="Mohammed issa" />
+          <img src="./assets/2.png" alt="Mohammed issa" loading="lazy"/>
         </div>
 
         <div className="liquid-shaped">

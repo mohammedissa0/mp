@@ -61,9 +61,9 @@ function Portfolio(props, ref) {
   return (
     <section id="portfolio" className="portfolio" ref={ref}>
       <motion.div
-        initial={{ opacity: 0, y: -200 }}
+        initial={{ opacity: 0, y: -25 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         className="main-text scroll-scale"
       >
         <span>What I Will Do For You</span>
@@ -72,9 +72,7 @@ function Portfolio(props, ref) {
 
       <div className="container">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          
           className="fillter-buttons scroll-scale"
         >
           <button
@@ -122,7 +120,7 @@ function Portfolio(props, ref) {
         <motion.div
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="portfolio-gallery scroll-scale"
         >
           <Porject

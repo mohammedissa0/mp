@@ -53,9 +53,9 @@ function Skills(props, ref) {
   return (
     <section id="skills" className="skills" ref={ref}>
       <motion.div
-        initial={{ y: -200, opacity: 0 }}
+        initial={{ y: -25, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         className="main-text scroll-scale"
       >
         <span>Technical and Professional</span>
@@ -63,9 +63,9 @@ function Skills(props, ref) {
       </motion.div>
       <div className="skill-main">
         <motion.div
-          initial={{ x: -200, opacity: 0 }}
+          initial={{ x: -25, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="skill-left scroll-scale"
         >
           <h3>Technical Skills</h3>
@@ -82,9 +82,7 @@ function Skills(props, ref) {
         </motion.div>
         {/* <!-- skill right----------------------------------------------- --> */}
         <motion.div
-          initial={{ opacity: 0, scaleX: 0.3 }}
-          whileInView={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 0.5 }}
+         
           className="skill-right scroll-scale"
         >
           <h3>Professional Skills</h3>
@@ -103,9 +101,9 @@ function Skills(props, ref) {
 
         {/* <!-- skill bottom----------------------------------------------- --> */}
         <motion.div
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 25, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="skill-bottom scroll-scale"
         >
           <h3>Languages</h3>
