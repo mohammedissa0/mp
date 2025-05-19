@@ -124,6 +124,70 @@ function Portfolio(props, ref) {
           className="portfolio-gallery scroll-scale"
         >
           <Porject
+            kind="ReactProjects "
+            img="./assets/mys.jpg"
+            name="cornermak website"
+            link="https://www.cornermak.com/"
+            github="https://www.cornermak.com/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects "
+            img="./assets/eng.jpg"
+            name="English Idioms"
+            link="https://englishidioms.vercel.app"
+            github="https://englishidioms.vercel.app"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/doba.jpg"
+            name="Dopamicaffen"
+            link="https://dobam0.netlify.app/"
+            github="https://dobam0.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/red.jpg"
+            name="Redbull"
+            link="https://redbull0.netlify.app/"
+            github="https://redbull0.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/carpet.jpg"
+            name="Carpets"
+            link="https://carpets0.netlify.app/"
+            github="https://carpets0.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/ur1.jpg"
+            name="Urinexa"
+            link="https://urinexa1.netlify.app/"
+            github="https://urinexa1.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/ape.jpg"
+            name="Apexaid"
+            link="https://apexaid-landing.vercel.app/"
+            github="https://apexaid-landing.vercel.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
+            kind="ReactProjects landing-pages"
+            img="./assets/ur0.jpg"
+            name="Urinexa"
+            link="https://urinexa0.netlify.app/"
+            github="https://urinexa0.netlify.app/"
+          />
+          {/* //////////////////////////////////////////////// */}
+          <Porject
             kind="ReactProjects landing-pages"
             img="./assets/watch.png"
             name="LuxuryWatch"
